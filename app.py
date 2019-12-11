@@ -19,6 +19,16 @@ def registration():
     """Show registration"""
     return render_template("registration.html", registration=registration)
 
+@app.route('/pricing')
+def pricing():
+    """Show prices"""
+    return render_template("pricing.html", pricing=pricing)
+
+@app.route('/contact_us')
+def contact_us():
+    """Show contact form"""
+    return render_template("contact_us.html", contact_us=contact_us)
+
 
 @app.route('/payment_details')
 def payment_details():

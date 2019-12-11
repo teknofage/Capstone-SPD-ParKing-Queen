@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
-
+<!DOCTYPE html>
 {% block content %}
 
+<main class="page landing-page">
 <div class="row">
     <div class="jumbotron text-center hero-background-img">
             
                 <div class="text">
                     <h2>Park your car when you want to, where you want to.</h2>
-                    <p>Get live information about the nearest parking spots, and share your status in real time. </br> Give the gift of your parking spot and earn credit towards your next one.</p><button class="btn btn-outline-dark btn-lg" data-bs-hover-animate="wobble" type="button" style="background-color: rgba(255,255,255,0.88);color: #343a40;"><a class="nav-link" href="/login" class="hvr-grow">Login</a></div>
+                    <p>Get live information about the nearest parking spots, and share your status in real time. </br> Give the gift of your parking spot and earn credit towards your next one.</p><button class="btn btn-outline-dark btn-lg" data-bs-hover-animate="wobble" type="button" style="background-color: rgba(219, 228, 233, 0.88);color: #2675c4;"><a class="nav-link" href="/login" class="hvr-grow">Login</a></div>
             
             <img src="static/images/Parking Front Page.jpeg">
     </div>
@@ -16,20 +17,28 @@
 
 <div class="container">
 <div class="row">
-    <div class="col-8">
-        <img src="static/images/Parking Pic.jpeg">
+    <div class="col-6 col-lg-8">
+            <style>
+                    div {
+                padding: 25px;
+                    }   
+                </style>
+        <img class="img-responsive" src="static/images/Parking Pic.jpeg">
     </div>
-    <div class="col-4">
+    <div class="col-12 col-lg-4">
         <style>
             div {
         padding: 25px;
             }   
         </style>
+        
         <h3>ParKing Queen Saves You Time</h3>
         <p>Never drive around in circles looking for parking again! ParKing Queen can find you nearby spots, even if they are only recently vacant. Just submit your location and we will show you on or more available spots that will fit the size of your vehicle.</p>
         <div class="btn btn-tertiary"><a href="/login">Login/Register</a></div>
+    
     </div>
 </div>
 </div>
-
+</main>
 {% endblock %}
+</html>
